@@ -27,6 +27,10 @@ class save_model(Callback):
                     "gloabl_step": trainer.global_step}, model_filename)
 
 
+##########################################################################################
+################################## LIGHTNING MODULE ######################################
+##########################################################################################
+
 class CustomTransformer(pl.LightningModule):
 
     def __init__(self, config, lr_value=0):
